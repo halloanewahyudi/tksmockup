@@ -19,5 +19,6 @@ import SectionOneVue from "./components/SectionOne.vue";
         <SectionFiveVue />
         <SecEnamVue/>
         <SectionSevenVue />
+        <FooterVue />
     </div>
 </template>
