@@ -14,9 +14,7 @@ import SectionOneVue from "./components/SectionOne.vue";
 <SectionTwoVue />
 <SectionThreeVue/>
 <SectionFourVue />
-<SectionFiveVue />
-<SectionSixVue />
-<SectionSevenVue />
-<FooterVue />
+
+
 
 </template>
