@@ -2,7 +2,7 @@
 import NavbarVue from "./components/navbar/Index.vue";
 import FooterVue from "./components/Footer.vue";
 import SectionSevenVue from "./components/SectionSeven.vue";
-import SectionSixVue from './components/SectionSix.vue';
+import SecEnamVue from './components/SecEnam.vue';
 import SectionFiveVue from "./components/SectionFive.vue";
 import SectionFourVue from "./components/SectionFour.vue";
 import SectionThreeVue from "./components/SectionThree.vue";
@@ -17,7 +17,7 @@ import SectionOneVue from "./components/SectionOne.vue";
         <SectionThreeVue />
         <SectionFourVue />
         <SectionFiveVue />
-        <SectionSixVue/>
+        <SecEnamVue/>
         <SectionSevenVue />
     </div>
 </template>
