@@ -10,11 +10,13 @@ import SectionTwoVue from "./components/SectionTwo.vue";
 import SectionOneVue from "./components/SectionOne.vue";
 </script>
 <template>
-<NavbarVue />
-<SectionTwoVue />
-<SectionThreeVue/>
-<SectionFourVue />
+    <div class="max-w-screen-2xl mx-auto">
+        <NavbarVue />
+        <SectionTwoVue />
+        <SectionThreeVue />
+        <SectionFourVue />
+        <SectionFiveVue />
 
 
-
+    </div>
 </template>

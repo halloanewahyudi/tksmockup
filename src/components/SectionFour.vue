@@ -17,12 +17,12 @@ import ArrowRight from "./icons/ArrowRight.vue";
       <div class="flex flex-col lg:flex-row gap-10 items-center">
         <button
           class="p-3 w-full max-w-[400px] border border-primary-950 flex justify-between gap-10 items-center text-primary-950 hover:bg-primary-950 hover:text-white text-xl duration-300">
-          Read More
+          Tecnology & Sercvices
           <ArrowRight class="h-5 w-8  " />
         </button>
         <button
           class="p-3 w-full max-w-[400px] border border-primary-950 flex justify-between gap-10 items-center text-primary-950 hover:bg-primary-950 hover:text-white text-xl duration-300">
-          Read More
+          R & D
           <ArrowRight class="h-5 w-8  " />
         </button>
       </div>
@@ -34,6 +34,6 @@ import ArrowRight from "./icons/ArrowRight.vue";
 
 <style scoped>
 .secfour{
-  background: url('../assets/bg-aer.png') no-repeat center right;
+  background: url('../assets/bg-aer.png') no-repeat  112% center ;
 }
 </style>
