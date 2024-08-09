@@ -1,7 +1,6 @@
 <script setup>
 import ArrowRightVue from './icons/ArrowRight.vue'
 import Link from './icons/Link.vue'
-
 </script>
 <template>
   <footer class="pt-20">
