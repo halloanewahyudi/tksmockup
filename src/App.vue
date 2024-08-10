@@ -8,7 +8,7 @@ import SectionFourVue from "./components/SectionFour.vue";
 import SectionThreeVue from "./components/SectionThree.vue";
 import SectionTwoVue from "./components/SectionTwo.vue";
 import SectionOneVue from "./components/SectionOne.vue";
-
+import Topic from './components/Topic.vue'
 </script>
 <template>
     <div class="max-w-screen-2xl mx-auto">

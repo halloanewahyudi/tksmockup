@@ -27,6 +27,17 @@ import ArrowRight from "./icons/ArrowRight.vue";
   background: url('https://www.tte-net.com/top/images/corporate_bg.jpg')no-repeat;
   background-size: cover;
 }
+.secsix:after{
+  content: '';
+  display: block;
+  position: absolute;
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 400px 200px 0 200px;
+   border-color: #003488 transparent transparent transparent;
+   transform: rotate(90deg);
+}
 .triangle {
    width: 0px;
    height: 0px;

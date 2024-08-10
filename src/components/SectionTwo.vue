@@ -42,9 +42,10 @@ onMounted(async () => {
   }
 });
 
-function onArrowsMounted( splide, prev, next ) {
-  console.log( splide.length );
+function onArrowsMounted(splide, prev, next) {
+  console.log(splide.length);
 }
+
 </script>
 <template>
   <section class="sectwo text-white ">
@@ -52,7 +53,7 @@ function onArrowsMounted( splide, prev, next ) {
       <div class="lg:col-span-1 flex flex-col justify-center items-center p-6 lg:py-20">
         <div class="max-w-[340px] flex flex-col gap-4">
           <h4>Topics</h4>
-          <Splide @splide:arrows:mounted="onArrowsMounted" ref="splideRef" :options="{
+          <Splide :options="{
             type: 'fade',
             perPage: 1,
             autoplay: true,
@@ -90,7 +91,7 @@ function onArrowsMounted( splide, prev, next ) {
           autoplay: true,
           rewind: true,
           autoScroll: {
-            speed: 3,
+            speed: 2.5,
           },
           arrows: false,
           pagination: false
@@ -102,7 +103,7 @@ function onArrowsMounted( splide, prev, next ) {
         <ul class="custom-pagination flex gap-5 text-3xl font-bold absolute bottom-0 ">
           <li v-for="(slide, index) in slides" :key="index">
             <button class="btn-page italic" :class="{ active: activeIndex === index }" @click="goToSlide(index)"> 0{{
-              index+1 }}
+              index + 1 }}
             </button>
           </li>
         </ul>
