@@ -8,80 +8,107 @@ import sl2 from '../assets/sl-2.jpg'
 import { onMounted, ref } from 'vue';
 
 const slides = [
-  { image: sl1 },
-  { image: sl2 }
+  {
+    title: ' Contributing to the environment and the future through hydrogen',
+    description: ' Using power derived from recyclable energy that contributes to decarbonization, Takasago Thermal Engineering is manufacturing green hydrogen and helping to create added value for customers by linking the generation, storage, and usage of power.',
+    image: sl1
+  },
+
+  {
+    title: 'T-Base® Project Topics <br> <small>Innovating the construction process at work sites</small>',
+    description: 'T-Base® is a platform for the innovation of construction processes.With the launch of the T-Base® facility that handles core processes such as planning, production, and distribution, we will standardize the processes at each work site, develop and manufacture new unit construction methods, and also develop a central production system that links partner companies, suppliers, and work sites',
+    image: sl2
+  }
 ]
 
 const splideRef = ref(null);
 const activeIndex = ref(0);
 
 const goToSlide = (index) => {
-    if (splideRef.value) {
-        splideRef.value.splide.go(index);  // Mengakses instance Splide untuk navigasi
-    }
+  if (splideRef.value) {
+    splideRef.value.splide.go(index);  // Mengakses instance Splide untuk navigasi
+  }
 };
 
 onMounted(async () => {
-    // await nextTick(); // Pastikan komponen sudah ter-mount
+  // await nextTick(); // Pastikan komponen sudah ter-mount
 
-    // Dapatkan instance Splide setelah komponen ter-mount
-    if (splideRef.value) {
-        const splideInstance = splideRef.value.splide;
-        splideInstance.on('moved', (newIndex) => {
-            activeIndex.value = newIndex;
-        });
-    }
+  // Dapatkan instance Splide setelah komponen ter-mount
+  if (splideRef.value) {
+    const splideInstance = splideRef.value.splide;
+    splideInstance.on('moved', (newIndex) => {
+      activeIndex.value = newIndex;
+    });
+  }
 });
+
+function onArrowsMounted( splide, prev, next ) {
+  console.log( splide.length );
+}
 </script>
 <template>
   <section class="sectwo text-white ">
-    <div class="grid grid-col-1 lg:grid-cols-3 diablue items-center">
+    <div class="grid grid-col-1 lg:grid-cols-3 diablue items-center relative">
       <div class="lg:col-span-1 flex flex-col justify-center items-center p-6 lg:py-20">
         <div class="max-w-[340px] flex flex-col gap-4">
           <h4>Topics</h4>
-          <h4>
-            Contributing to the environment and the future through hydrogen
-          </h4>
-          <p>
-            Using power derived from recyclable energy that contributes to decarbonization, Takasago Thermal Engineering
-            is manufacturing green hydrogen and helping to create added value for customers by linking the generation,
-            storage, and usage of power.
-          </p>
-          <button
-            class="p-3 w-full border border-white flex justify-between items-center trxt-white hover:bg-primary-950 text-xl">
-            Read More
-            <ArrowRight class="h-5 w-8" />
-          </button>
+          <Splide @splide:arrows:mounted="onArrowsMounted" ref="splideRef" :options="{
+            type: 'fade',
+            perPage: 1,
+            autoplay: true,
+            arrows: false,
+            pagination: false,
+            rewind: true,
+            focus: 0,
+            autoScroll: {
+              speed: 3,
+            },
+            classes: {
+              pagination: 'custom-pagination',
+            },
+          }">
+            <SplideSlide v-for="(item, index) in slides" :key="index" class="flex flex-col gap-4">
+              <h4 v-html="item.title"></h4>
+              <p class="text-lg font-medium" v-html="item.description"></p>
+              <button
+                class="p-3 w-full border border-white flex justify-between items-center trxt-white hover:bg-primary-950 text-xl">
+                Read More
+                <ArrowRight class="h-5 w-8" />
+              </button>
+            </SplideSlide>
+          </Splide>
         </div>
       </div>
       <div class="lg:col-span-2">
         <Splide ref="splideRef" :options="{
           type: 'slide',
-          perPage:2,
-          gap:30,
-          focus  : 0,
-          height   : '400px',
+          perPage: 2,
+          gap: 30,
+          focus: 0,
+          height: '400px',
           autoWidth: true,
           autoplay: true,
           rewind: true,
           autoScroll: {
-            speed: 4,
+            speed: 3,
           },
           arrows: false,
           pagination: false
-        }" aria-label="My Favorite Images" class="flex">
+        }" class="flex">
           <SplideSlide v-for="(item, index) in slides" :key="index" class="">
             <img :src="item.image" alt="" srcset="" class="w-[600px] h-[400px] object-cover">
           </SplideSlide>
         </Splide>
-      </div>
-      <ul class="custom-pagination">
-            <li v-for="(slide, index) in slides" :key="index">
-                <button :class="{ active: activeIndex === index }" @click="goToSlide(index)">
-                </button>
-            </li>
+        <ul class="custom-pagination flex gap-5 text-3xl font-bold absolute bottom-0 ">
+          <li v-for="(slide, index) in slides" :key="index">
+            <button class="btn-page italic" :class="{ active: activeIndex === index }" @click="goToSlide(index)"> 0{{
+              index+1 }}
+            </button>
+          </li>
         </ul>
+      </div>
     </div>
+
   </section>
 </template>
 
@@ -96,7 +123,25 @@ onMounted(async () => {
 .diablue {
   background-image: url('../assets/diablue.svg');
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: 120px;
   background-size: cover;
+}
+
+.btn-page {
+  width: 60px;
+  opacity: .3;
+}
+
+.btn-page.active {
+  opacity: 1;
+}
+
+.btn-page::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 }
 </style>

@@ -62,7 +62,7 @@ const iconLeave = () => {
 
 </template>
 <style scoped>
-.dihover .icon{
+.dihover .icon,.icon:hover{
     @apply bg-gradient-to-t from-primary-950 to-primary-900
 }
 </style>
