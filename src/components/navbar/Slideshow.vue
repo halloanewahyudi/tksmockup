@@ -30,13 +30,28 @@ const slides = [
             pagination: false
         }" aria-label="My Favorite Images">
       
-            <SplideSlide v-for="(item, index) in slides" :key="index" class="min-h-screen">
+            <SplideSlide v-for="(item, index) in slides" :key="index" class="min-h-screen ">
                 <div :style="{ backgroundImage: `url(${item.image})` }"
-                    class="slide min-h-screen w-full block bg-no-repeat bg-center bg-cover slide-content">
-                    </div>
-                <div
-                  
-                </div>
+                    class="slide min-h-screen w-full flex flex-col justify-end items-center lg:p-20 bg-no-repeat bg-center bg-cover slide-content">
+                   <div class="max-w-[560px] mx-auto slide-content">
+                    <p class="text-3xl text-white ">
+                        {{ item.description }}
+                    </p>
+                   </div>
+                   
+                    </div>           
             </SplideSlide>
         </Splide>
 </template>
+<style scoped>
+.slide > .slide-content{
+    text-shadow: 1px 5px 5px #000;
+    font-weight: 500;
+    color: #fff;
+    @apply opacity-0 scale-75 -translate-x-60  
+}
+
+.splide__slide.is-active .slide >  .slide-content{
+   @apply opacity-100 scale-100 translate-x-0 delay-200 duration-500
+}
+</style>

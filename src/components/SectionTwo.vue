@@ -100,6 +100,7 @@ function onArrowsMounted(splide, prev, next) {
             <img :src="item.image" alt="" srcset="" class="w-[600px] h-[400px] object-cover">
           </SplideSlide>
         </Splide>
+        <button @click="splide.goToSlide(next)">Next</button>
         <ul class="custom-pagination flex gap-5 text-3xl font-bold absolute bottom-0 left-20 ">
           <li v-for="(slide, index) in slides" :key="index">
             <button class="btn-page italic" :class="{ active: activeIndex === index }" @click="goToSlide(index)"> 0{{
