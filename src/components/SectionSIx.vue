@@ -20,12 +20,25 @@ import ArrowRight from "./icons/ArrowRight.vue";
       </div>
     </div>
   </div>
+  <div class="triangle"></div>
 </section>
 </template>
 <style scoped>
 .secsix{
   background: url('https://www.tte-net.com/top/images/corporate_bg.jpg')no-repeat;
   background-size: cover;
+}
+.secsix:before{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  min-height: 500px;
+  z-index: 100;
+  background: url('../assets/triangle.png')no-repeat;
 }
 .secsix:after{
   content: '';
@@ -37,13 +50,17 @@ import ArrowRight from "./icons/ArrowRight.vue";
    border-width: 400px 200px 0 200px;
    border-color: #003488 transparent transparent transparent;
    transform: rotate(90deg);
+   
 }
 .triangle {
-   width: 0px;
-   height: 0px;
-   border-style: solid;
-   border-width: 400px 200px 0 200px;
-   border-color: #003488 transparent transparent transparent;
-   transform: rotate(0deg);
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  min-height: 500px;
+  z-index: 100;
+  background:#dedede url('../assets/triangle.png') no-repeat;
 }
 </style>

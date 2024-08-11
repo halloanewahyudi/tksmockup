@@ -34,6 +34,6 @@ import ArrowRight from "./icons/ArrowRight.vue";
 
 <style scoped>
 .secfour{
-  background: url('../assets/bg-aer.png') no-repeat  112% center ;
+  background: url('../assets/aer.jpg') no-repeat  105% center ;
 }
 </style>

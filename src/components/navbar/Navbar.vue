@@ -16,11 +16,21 @@ const iconLeave = () => {
     }
 }
 
+onMounted(()=>{
+    window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 500) {
+        navbar.classList.add('nav-scrolled');
+    } else {
+        navbar.classList.remove('nav-scrolled');
+    }
+});
+})
 
 </script>
 <template>
-    <div ref="sosIcon" class="nav-utama flex justify-between items-start  top-0 left-0 z-50  ">
-        <nav @mouseenter="iconEnter" @mouseleave="iconLeave"
+    <div  ref="sosIcon" class="nav-utama flex justify-between items-start  top-0 left-0 z-50  ">
+        <nav id="navbar" @mouseenter="iconEnter" @mouseleave="iconLeave"
             class="navbar flex group  items-center justify-between w-full relative z-50 p-6 hover:bg-white duration-300">
             <img src="../../assets/logo.svg" alt="" class="w-[200px] h-auto">
             <div class="menu flex flex-col gap-2 items-end text-white group-hover:text-secondary-950">
@@ -76,6 +86,18 @@ const iconLeave = () => {
  
 </template>
 <style scoped>
+.navbar.nav-scrolled{
+  @apply bg-white text-primary-950 fixed top-0 left-0 w-full duration-200 transition-all; 
+}
+.navbar.nav-scrolled li a{
+    @apply text-primary-950 ;
+}
+.navbar.nav-scrolled .lang{
+    @apply border-primary-950 divide-primary-950 text-primary-950; 
+}
+.navbar.nav-scrolled .lang .active{
+    @apply text-white bg-primary-950;
+}
 .dihover .icon,.icon:hover{
     @apply bg-gradient-to-t from-primary-950 to-primary-900
 }

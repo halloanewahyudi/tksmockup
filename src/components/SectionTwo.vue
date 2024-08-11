@@ -48,10 +48,10 @@ function onArrowsMounted(splide, prev, next) {
 
 </script>
 <template>
-  <section class="sectwo text-white ">
-    <div class="grid grid-col-1 lg:grid-cols-3 diablue items-center relative">
+  <section class="sectwo text-white relative min-h-screen ">
+    <div class="grid grid-col-1 lg:grid-cols-3 diablue items-center relative z-10">
       <div class="lg:col-span-1 flex flex-col justify-center items-center p-6 lg:py-20">
-        <div class="max-w-[340px] flex flex-col gap-4">
+        <div class="max-w-[340px] flex flex-col gap-4 py-10">
           <h4>Topics</h4>
           <Splide :options="{
             type: 'fade',
@@ -80,7 +80,7 @@ function onArrowsMounted(splide, prev, next) {
           </Splide>
         </div>
       </div>
-      <div class="lg:col-span-2">
+      <div class="lg:col-span-2 relative pb-[173px]">
         <Splide ref="splideRef" :options="{
           type: 'slide',
           perPage: 2,
@@ -100,7 +100,7 @@ function onArrowsMounted(splide, prev, next) {
             <img :src="item.image" alt="" srcset="" class="w-[600px] h-[400px] object-cover">
           </SplideSlide>
         </Splide>
-        <ul class="custom-pagination flex gap-5 text-3xl font-bold absolute bottom-0 ">
+        <ul class="custom-pagination flex gap-5 text-3xl font-bold absolute bottom-0 left-20 ">
           <li v-for="(slide, index) in slides" :key="index">
             <button class="btn-page italic" :class="{ active: activeIndex === index }" @click="goToSlide(index)"> 0{{
               index + 1 }}
@@ -109,7 +109,7 @@ function onArrowsMounted(splide, prev, next) {
         </ul>
       </div>
     </div>
-
+<div class="w-full bg-primary-950 h-24 absolute bottom-0 z-0"></div>
   </section>
 </template>
 
@@ -124,7 +124,7 @@ function onArrowsMounted(splide, prev, next) {
 .diablue {
   background-image: url('../assets/diablue.svg');
   background-repeat: no-repeat;
-  background-position-x: 120px;
+  background-position-x: 230px;
   background-size: cover;
 }
 
