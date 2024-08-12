@@ -1,6 +1,6 @@
 <script setup>
 import NavbarVue from "./components/navbar/Index.vue";
-import FooterVue from "./components/Footer.vue";
+import FooterVue from "./components/NewFooter.vue";
 import SectionSevenVue from "./components/SectionSeven.vue";
 import SecEnamVue from './components/SecEnam.vue';
 import SectionFiveVue from "./components/SectionFive.vue";
