@@ -43,8 +43,7 @@ onMounted(() => {
                     </button>
                 </div>
                 <ul class="flex  gap-10 font-medium">
-                    <li> <a href="#"> Project</a></li>
-                    <li> <a href="#"> Services</a></li>
+                    <li> <a href="#"> Project Services</a></li>
                     <li> <a href="#"> Product</a></li>
                     <li> <a href="#"> Customers</a></li>
                     <li> <a href="#"> About</a></li>

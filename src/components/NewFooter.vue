@@ -20,8 +20,7 @@ import Link from './icons/Link.vue'
                 <div class="flex flex-col gap-2">
                     <h4> Menu </h4>
                     <ul class="flex flex-col gap-2 ">
-                        <li> <a href="#"> Project</a></li>
-                        <li> <a href="#"> Services</a></li>
+                        <li> <a href="#"> Project Services</a></li>
                         <li> <a href="#"> Product</a></li>
                         <li> <a href="#"> Customers</a></li>
                         <li> <a href="#"> About</a></li>
