@@ -12,7 +12,7 @@ import Info from '../../components/icons/Info.vue'
             <div class="flex flex-wrap gap-5">
                <div class="flex items-center gap-2"> <Info /> Important News </div>
                <div class="lg:border-l border-white lg:px-5 max-w-[680px]">
-                Beware of "Spoofing Emails" from Fake Employees of Takasago Thermal Engineering and Our Group Companies（105.9 KB）
+                Beware of "Spoofing Emails" from Fake Employees of PT. Takasago Thermal Engineering and Our Group Companies（105.9 KB）
                </div>
             </div>
         </div>

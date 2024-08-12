@@ -38,9 +38,6 @@ onMounted(() => {
                     <button class="py-1 px-2 text-sm">
                         ID
                     </button>
-                    <button class="py-1 px-2 text-sm">
-                        JP
-                    </button>
                     <button class="py-1 px-2 text-sm active ">
                         EN
                     </button>

@@ -12,7 +12,7 @@ const slides = [
     {
         nama: 'Slide Dua',
         image: slidetwo,
-        description: 'Takasago Thermal Engineering celebrates its 100th anniversary in November 2023.'
+        description: 'PT. Takasago Thermal Engineering celebrates its 100th anniversary in November 2023.'
     }
 ];
 </script>

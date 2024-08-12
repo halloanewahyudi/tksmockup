@@ -25,7 +25,7 @@ import Link from './icons/Link.vue'
           <ul class="flex flex-col gap-2 ">
             <li><a href="#"> Research and Development Policy </a></li>
             <li><a href="#"> Areas of Activity </a></li>
-            <li><a href="#">About the Takasago Thermal Engineering </a></li>
+            <li><a href="#">About the PT. PT. Takasago Thermal Engineering </a></li>
             <li><a href="#">Innovation Center </a></li>
             <li><a href="#"> Owned Patents </a></li>
           </ul>
@@ -33,7 +33,7 @@ import Link from './icons/Link.vue'
         <div class="flex flex-col gap-2">
           <div class="flex flex-col gap-2">
           <button class="btn-footer">
-            <span> About Takasago Thermal Engineering
+            <span> About PT. Takasago Thermal Engineering
               <ArrowRightVue />
             </span>
           </button>
@@ -56,7 +56,7 @@ import Link from './icons/Link.vue'
           </button>
           <ul class="flex flex-col gap-2 ">
             <li><a href="#"> To Our Shareholders and Investors </a></li>
-            <li><a href="#"> Quick Guide to Takasago Thermal Engineering </a></li>
+            <li><a href="#"> Quick Guide to PT. Takasago Thermal Engineering </a></li>
             <li><a href="#"> Management Plan </a></li>
             <li><a href="#"> Performance Highlights </a></li>
             <li><a href="#"> Financial Results </a></li>
@@ -103,7 +103,7 @@ import Link from './icons/Link.vue'
       </div>
     </div>
     <div class="bg-neutral-800 text-neutral-50 text-center text-sm p-2">
-      Copyright © Takasago Thermal Engineering Co., Ltd. All Rights Reserved.
+      Copyright © PT. Takasago Thermal Engineering Co., Ltd. All Rights Reserved.
     </div>
   </footer>
 </template>

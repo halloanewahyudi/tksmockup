@@ -10,7 +10,7 @@ import { onMounted, ref } from 'vue';
 const slides = [
   {
     title: ' Contributing to the environment and the future through hydrogen',
-    description: ' Using power derived from recyclable energy that contributes to decarbonization, Takasago Thermal Engineering is manufacturing green hydrogen and helping to create added value for customers by linking the generation, storage, and usage of power.',
+    description: ' Using power derived from recyclable energy that contributes to decarbonization, PT. Takasago Thermal Engineering is manufacturing green hydrogen and helping to create added value for customers by linking the generation, storage, and usage of power.',
     image: sl1
   },
 

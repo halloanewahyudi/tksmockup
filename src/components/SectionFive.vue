@@ -4,12 +4,12 @@ import ArrowRight from "./icons/ArrowRight.vue";
 <template>
   <section class="secfive py-20 flex justify-end">
     <div class="max-w-[600px] p-6 lg:p-10 flex flex-col gap-5">
-      <h4 class="text-primary-950 leading-snug">Takasago Thermal Engineering
+      <h4 class="text-primary-950 leading-snug">PT. Takasago Thermal Engineering
         Management Policy </h4>
 
       <p class="leading-snug text-xl">
         This is an introduction of
-        Takasago Thermal Engineering Group’s strategies,
+        PT. Takasago Thermal Engineering Group’s strategies,
         and the direction we want to head going forward.
       </p>
       <button
