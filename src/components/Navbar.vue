@@ -9,7 +9,7 @@ import Email from '../components/icons/Email.vue'
         <!--       menunya -->
         <div class="flex justify-between items-start relative top-0 left-0 z-50">
             <nav class="flex  items-center justify-between w-full relative z-50 p-4">
-                <img src="../assets/logo.svg" alt="" class="w-[200px] h-auto">
+                <img src="../assets/logolg.png" alt="" class="w-[200px] h-auto">
 
                 <div class="menu text-white">
                     <ul class="flex gap-4 font-medium">

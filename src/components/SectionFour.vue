@@ -4,7 +4,7 @@ import ArrowRight from "./icons/ArrowRight.vue";
 
 <template>
   <section class="secfour py-20 px-6 lg:p-12 min-h-[90vh] flex items-center ">
-    <div class="max-w-[980px] p-10 flex flex-col gap-4">
+    <div class="max-w-[860px] p-10 flex flex-col gap-4">
       <h4 class="text-primary-950 leading-snug">
         With environmental solutions for a decarbonized society,
         we will support the entire life cycle of buildings,

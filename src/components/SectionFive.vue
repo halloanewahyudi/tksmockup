@@ -3,9 +3,11 @@ import ArrowRight from "./icons/ArrowRight.vue";
 </script>
 <template>
   <section class="secfive py-20 flex justify-end">
-    <div class="max-w-[600px] p-6 lg:p-10 flex flex-col gap-5">
-      <h4 class="text-primary-950 leading-snug">About the Company History</h4>
-
+    <div class="max-w-[860px] p-6 lg:p-10 flex flex-col gap-5 lg:pl-20">
+      <div>
+        <h4 class="text-primary-950 leading-snug">About Us</h4>
+        <p class="text-xl">PT Takasago Thermal Engineering</p>
+      </div>
       <p class="leading-snug text-xl">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </p>
@@ -20,8 +22,8 @@ import ArrowRight from "./icons/ArrowRight.vue";
 
 <style scoped>
 .secfive {
-  background:#f2f2f2 url('../assets/swit.jpg')no-repeat;
-  background-position-x: -600px;
-  background-size: cover;
+  background:#f2f2f2 url('../assets/about.png')no-repeat;
+ /*  background-position-x: -200px; */
+  background-size: contain;
 }
 </style>
