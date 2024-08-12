@@ -6,8 +6,8 @@ import ArrowRight from "./icons/ArrowRight.vue";
   <div class="max-w-screen-lg mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-4">
       <div class="lg:col-span-3 pt-10">
-        <h4 class="mb-10">About PT. Takasago Thermal Engineering</h4>
-        <p class="text-xl font-semibold">Read about the Company Outline and History, etc.</p>
+        <h4 class="mb-10">About the Company History</h4>
+<!--         <p class="text-xl font-semibold">Read about the Company Outline and History, etc.</p> -->
       </div>
       <div class="opacity-0 group-hover:opacity-100 group-hover:flex duration-300 flex-col justify-center items-center text-2xl  ">
         <div class="w-max flex flex-col items-center justify-center mx-auto relative z-10 left-8 translate-x-1/2">

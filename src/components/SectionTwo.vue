@@ -3,21 +3,27 @@ import ArrowRight from '../components/icons/ArrowRight.vue'
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
 
-import sl1 from '../assets/sl-1.jpg'
-import sl2 from '../assets/sl-2.jpg'
+import sl1 from '../assets/clean-room1.jpg'
+import sl2 from '../assets/hvac-system.jpg'
+import sl3 from  '../assets/plumbing-system.jpg'
 import { onMounted, ref } from 'vue';
 
 const slides = [
   {
-    title: ' Contributing to the environment and the future through hydrogen',
-    description: ' Using power derived from recyclable energy that contributes to decarbonization, PT. Takasago Thermal Engineering is manufacturing green hydrogen and helping to create added value for customers by linking the generation, storage, and usage of power.',
+    title: ' Cleanroom System',
+    description: ' "Clean room" is a high technology which helps improving production quality, shortening a production process time which leads to a reduction on of a production cost.',
     image: sl1
   },
 
   {
-    title: 'T-Base® Project Topics <br> <small>Innovating the construction process at work sites</small>',
-    description: 'T-Base® is a platform for the innovation of construction processes.With the launch of the T-Base® facility that handles core processes such as planning, production, and distribution, we will standardize the processes at each work site, develop and manufacture new unit construction methods, and also develop a central production system that links partner companies, suppliers, and work sites',
+    title: 'HVAC Systems (Heat , Ventilation & Air Conditioning)',
+    description: 'We provide the most suitable air conditioning systems, which it enhances the efficiency of working conditions as well as working environments',
     image: sl2
+  },
+  {
+    title: 'Mechanical & Plumbing System',
+    description: 'We also provide mechanical and plumbing system which are the significant life lines for a building and a factory',
+    image: sl3
   }
 ]
 
@@ -51,11 +57,11 @@ function onArrowsMounted(splide, prev, next) {
 
 </script>
 <template>
-  <section class="sectwo text-white relative min-h-screen ">
-    <div class="grid grid-col-1 lg:grid-cols-3 diablue items-center relative z-10">
+  <section class="sectwo text-white relative min-h-screen">
+    <div class="grid grid-col-1 lg:grid-cols-3 diablue items-center relative z-10 pt-20">
       <div class="lg:col-span-1 flex flex-col justify-center items-center p-6 lg:py-20">
         <div class="max-w-[340px] flex flex-col gap-4 py-10">
-          <h4>Topics</h4>
+          <h4>Project Services.</h4>
           <Splide :options="{
             type: 'fade',
             perPage: 1,

@@ -1,7 +1,7 @@
 <script setup>
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
-import slideOne from '../../assets/slider1.jpg';
+import slideOne from '../../assets/slider2.jpg';
 import slidetwo from '../../assets/slider.jpg';
 const slides = [
     {
@@ -10,9 +10,9 @@ const slides = [
         description: 'With our revolutionary environmental innovations, we activate the Earth’s future'
     },
     {
-        nama: 'Slide Dua',
+        nama: '',
         image: slidetwo,
-        description: 'PT. Takasago Thermal Engineering celebrates its 100th anniversary in November 2023.'
+        description: 'PT. Takasago Thermal Engineering <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
     }
 ];
 </script>
@@ -34,8 +34,7 @@ const slides = [
                 <div :style="{ backgroundImage: `url(${item.image})` }"
                     class="slide min-h-screen w-full flex flex-col justify-end items-center lg:p-20 bg-no-repeat bg-center bg-cover slide-content">
                    <div class="max-w-[560px] mx-auto slide-content">
-                    <p class="text-3xl text-white ">
-                        {{ item.description }}
+                    <p v-html="item.description" class="text-3xl text-white ">
                     </p>
                    </div>
                    
