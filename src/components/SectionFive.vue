@@ -6,7 +6,7 @@ import ArrowRight from "./icons/ArrowRight.vue";
     <div class="max-w-[860px] p-6 lg:p-10 flex flex-col gap-5 lg:pl-20">
       <div>
         <h4 class="text-primary-950 leading-snug">About Us</h4>
-        <p class="text-xl">PT Takasago Thermal Engineering</p>
+        <p class="text-lg tracking-wide">PT Takasago Thermal Engineering</p>
       </div>
       <p class="leading-snug text-xl">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
