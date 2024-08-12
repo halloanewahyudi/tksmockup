@@ -110,7 +110,7 @@ function onArrowsMounted(splide, prev, next) {
           </SplideSlide>
         </Splide>
         <!-- <button @click="nextSlide" class="text-xl absolute top-36 right-64 italic underline shadow-lg">Next</button> -->
-        <ul class="custom-pagination flex gap-5 text-3xl font-bold absolute bottom-0 left-20 ">
+        <ul class="custom-pagination flex gap-5 text-3xl font-bold absolute bottom-20 left-20 ">
           <li v-for="(slide, index) in slides" :key="index">
             <button class="btn-page italic" :class="{ active: activeIndex === index }" @click="goToSlide(index)"> 0{{
               index + 1 }}
