@@ -4,12 +4,10 @@ import ArrowRight from "./icons/ArrowRight.vue";
 <template>
   <section class="secthree flex justify-end items-center min-h-screen pt-20 pb-40 relative">
     <div class="max-w-[720px] p-6 lg:p-12 flex flex-col gap-4">
-      <h4 class="text-primary-950 font-semibold">What PT. Takasago Thermal Engineering
-        can do to realize a sustainable society</h4>
+      <p class="text-primary-700 tracking-wide"> Our Pproducts</p>
+      <h4 class="text-primary-950 font-semibold">SWIT thermal Stratification</h4>
       <p class="text-xl ">
-        We will use the technologies and expertise we have accumulated so far,
-        and keep challenging ourselves to create new innovations,
-        as we strive to find solutions for the social issues of ESG and SDGs.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </p>
       <button
         class="p-3 w-full max-w-[400px] border border-primary-950 flex justify-between gap-10 items-center text-primary-950 hover:bg-primary-950 hover:text-white text-xl duration-300">
