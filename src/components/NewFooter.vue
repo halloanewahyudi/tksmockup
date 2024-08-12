@@ -52,7 +52,7 @@ import Link from './icons/Link.vue'
             </div>
         </div>
         <div class="bg-neutral-800 text-neutral-50 text-center text-sm p-2">
-            Copyright © PT. Takasago Thermal Engineering Co., Ltd. All Rights Reserved.
+            Copyright © PT. Takasago Thermal Engineering All Rights Reserved.
         </div>
     </footer>
 </template>
