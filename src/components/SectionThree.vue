@@ -6,7 +6,7 @@ import ArrowRight from "./icons/ArrowRight.vue";
     <div class="max-w-[720px] p-6 lg:p-12 flex flex-col gap-4">
       <div>
         <p class="text-secondary-600 tracking-wide text-lg font-medium"> Our Products</p>
-        <h4 class="text-primary-950 font-semibold">SWIT thermal Stratification</h4>
+        <h4 class="text-primary-950 font-semibold">SWIT Thermal Stratification</h4>
       </div>
     
       <p class="text-xl ">
