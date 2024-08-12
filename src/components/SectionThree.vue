@@ -2,7 +2,7 @@
 import ArrowRight from "./icons/ArrowRight.vue";
 </script>
 <template>
-  <section class="secthree flex justify-end items-center min-h-screen py-20 relative">
+  <section class="secthree flex justify-end items-center min-h-screen pt-20 pb-40 relative">
     <div class="max-w-[720px] p-6 lg:p-12 flex flex-col gap-4">
       <h4 class="text-primary-950 font-semibold">What PT. Takasago Thermal Engineering
         can do to realize a sustainable society</h4>
