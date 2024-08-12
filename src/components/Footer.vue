@@ -92,7 +92,7 @@ import Link from './icons/Link.vue'
       <div class="container mx-auto py-8 mt-16">
         <div class="flex gap-4 justify-between items-center ">
           <div>
-            <img src="../assets/logo.svg" alt="" srcset="" class="w-[160px] h-auto ">
+            <img src="../assets/logolg.png" alt="" srcset="" class="w-[160px] h-auto ">
           </div>
           <div class="flex items-center divide-x  divide-neutral-400 text-sm">
             <a href="#" class="py-1 px-2">Site Map </a>

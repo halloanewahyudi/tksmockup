@@ -32,7 +32,7 @@ onMounted(() => {
     <div ref="sosIcon" class="nav-utama flex justify-between items-start  top-0 left-0 z-50  ">
         <nav id="navbar" @mouseenter="iconEnter" @mouseleave="iconLeave"
             class="navbar flex group  items-center justify-between w-full relative z-50 p-6 hover:bg-white duration-300">
-            <img src="../../assets/logo.svg" alt="" class="w-[200px] h-auto">
+            <img src="../../assets/logolg.png" alt="" class="w-[200px] h-auto">
             <div class="menu flex flex-col gap-2 items-end text-white group-hover:text-secondary-950">
                 <div class="lang flex divide-x divide-white border border-white max-w-max  font-bold">
                     <button class="py-1 px-2 text-sm">
